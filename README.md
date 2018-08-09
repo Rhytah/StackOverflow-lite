@@ -13,6 +13,7 @@ Users can accept an answer out of all the answers to his/her question as the pre
 answer.
 
 Optional Features
+
 Users can upvote or downvote an answer.
 Users can comment on an answer.
 Users can fetch all questions he/she has ever asked on the platform
