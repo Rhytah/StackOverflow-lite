@@ -19,8 +19,8 @@ body
 p
 {
     font: caption;
-    font-size: 24px;
-    font-weight:bold;
+    font-size: 16px;
+    
 }
 h1
 {
@@ -117,6 +117,13 @@ height: 100px;
     font-size: 15px;
 }
 
+.search-control  input,
+.search-control  button {
+    background-color: #e4f0f5;
+    color: #071e30;
+    font-size: rem;
+    widows: 60%;
+}
 .container
 {
     width:100%;
@@ -316,104 +323,6 @@ div#box .box-panel
     background-color: #f1f1f1;
     max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(66, 109, 230)
-}
-/*dropdown links*/
-.dropdown-content a
-{
-    color:black;
-    padding: 12px 16px;
-    display: block;
-
-}
-.show
-{
-    display:block;
-}
-/*table styling user*/
-.container #ViewRequests
-{
-    height: auto;
-    width: 90%;
-    box-sizing: border-box;
-}
-#ViewRequests 
-{
-    width: 90%;
-    padding-left: 0.8rem;
-}
-#myData
-{
-    padding: 12px 20px 12px 40px;
-    
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    height: 30px;
-    width: 40%;
-    background-color: rgba(252, 252, 252, 0.781);
-    margin-bottom: 12px;
-}
-#Requests
-{
-    padding: 0 02px;
-   /* border: 1px solid #1C6EA4;*/
-    background-color: rgba(238, 238, 238, 0.103);
-    width: fit-content;
-    border: 2px solid #1a015e;
-    border-collapse: collapse;
-    display: inline-table;
-    font-size: 18px;
-    box-sizing: border-box;
-}
-#Requests td th
-{
-    border: 1px solid #AAAAAA;
-    padding: 3px 2px;
-    color: navy;
-    font-weight: bold;
-    text-align: auto;
-    border-bottom-color: #2438045b;
-}
-#Requests tbody td
-{
-    font-size: 18px;
-    color: #1a1b63;
-    border: 1px solid #0b4b7c;
-
-}
-table #Approve
-{
-    font-size: 20px;
-    cursor: pointer;
-    user-select: contain;
-}
-fa 
-{
-    font:sans-serif;
-}
-fa:hover
-{
-    color: rgb(1, 29, 68) ;
-    align-self: center;
-    height: 30px;
-}
-/*create request*/
-
-#CreateRequest
-{
-    display: inline-block;
-    width: 90%;
-    font-size: 18px;
-    padding: 6px;
-}
-#CreateRequest form, p
-{
-    padding: 2px auto;
-    margin: 0;
-    width: 50%;
-    color: #223750;
-    display: inline-block;
-    font-size: 18px;
 }
 
 .form input
