@@ -7,6 +7,16 @@
         <link rel="stylesheet" href="CSS/style.css">
         </link>
         <head>
+                <script type="text/javascript">
+                    
+                    function show(id) {
+                    var e = document.getElementById(id);
+                    if(e.style.display == 'none')
+                    e.style.display = 'block';
+                    else
+                    e.style.display = 'none';
+                    }
+                </script>
 
         </head>
     
@@ -19,7 +29,17 @@
                             <ul style="float:right;">
                                 <li class ="active"><a>Home</a></li>
                                 <li><a href="forum.html">Forum</a></li>
-                                <li><a href="user.html">SignIn</a></li>
+                                <li><button onclick="show('SignIn');">SignIn</button></li>
+                                <div  class="formBox" id="SignIn" style="display:none">
+                                        <form>
+                                            <br>
+                                            <br>
+                                                <p>Email</p>
+                                                <input type="text" placeholder="Email">
+                                                <p>Password</p>
+                                                <input type="Password" placeholder="********">
+                                                <button><a href="user.html">Login</a></button>
+                                            </form></div>
                             </ul>
                         </nav>                
         
@@ -27,7 +47,7 @@
         </header>
         
                 
-                <div class="container" id= "SignUp">
+                <div class="container"  >
                         
                     <div class="left">
                         
@@ -35,10 +55,12 @@
                         <h1>Learn, Share, Build</h1>
                         <h3></h3>
                         <p>Join the world's largest developer community</p>
+
+                        <button onclick="show('SignUp');">Join us</button>
                     </div>
 
                     <div class="right">
-                        <div class="formBox">
+                        <div class="formBox" id= "SignUp" style="display: none">
                         <form>
                             <p>First Name</p>
                             <input type="text" placeholder="First Name">
@@ -51,6 +73,7 @@
                             <input type="Password" placeholder="********">
                             <input type="submit" name="" value="SignUp">
                         </form>
+
                         </div>
                     </div>
                 </div>
