@@ -16,6 +16,11 @@
                     else
                     e.style.display = 'none';
                     }
+
+                    //alert for added answer
+                    function answerAlert(){
+                        alert("Your answer has been successfully added");
+                    }
                 
                 </script>
                 <header class = "top-bar js-top-bar  _fixed top-bar">
@@ -214,7 +219,7 @@
                                                     <table width="98%" border="0" cellspacing="0" cellpadding="0">
                                                         <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2">
                                                                 <td><textarea></textarea>
-                                                                <button type="submit">Submit my answer</button></td>
+                                                                <button type="submit" onclick="answerAlert()">Submit my answer</button></td>
                                                             </tr> 
                                     </table>
 
