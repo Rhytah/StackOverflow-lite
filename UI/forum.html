@@ -16,6 +16,12 @@
                     else
                     e.style.display = 'none';
                     }
+
+                    //alert for posted question
+                    function questionAlert(){
+                        alert("Your question has been posted");
+                    }
+               
                 
                 </script>
                 <header class = "top-bar js-top-bar  _fixed top-bar">
@@ -95,16 +101,18 @@
                 <td width="1%" nowrap><font size="-1">Posted:
                 28 Jun 2018 10:30pm
                 </font></td></tr></table>
+                <div>
+                <img src="images/ask.png" height="60" width="60">
+                <h2>Post a question</h2>
                 
-                <img src="images/ask.png" height="100" width="100">
-                <b>Post a question</b>
-                <div >
                         <form id="postquestion">
-                                        Question:<input type="text" name="Question"><br>
-                                        Description:<input type="text" name="description"><br>
-                                        <button type="reset">Post my question</button>
-                                    </form>
-                                    </div>
+                                       <p>Question:</p> <input type="text" name="Question">
+                                        <p>Description:</p><input type="text" name="description">
+                                        
+                                        
+                                    </form><button type="reset" onclick="questionAlert()">Post my question</button>
+                                    
+                                </div>
 
 
 
@@ -226,15 +234,7 @@
                         
                     </div> 
                                        
-                    <img src="images/ask.png" height="100" width="100">
-                    <b>Post a question</b>
-                    <div id="postquestion" >
-                            <center><a name="question"></a></center>
-                                <table width="98%" border="0" cellspacing="0" cellpadding="0">
-                                    <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2">
-                                            <td><textarea></textarea>
-                                            <button type="submit">Post my question</button></td>
-                                        </tr> 
+                    
                 </table>
                 
                 </div>
