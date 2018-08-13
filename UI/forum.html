@@ -35,8 +35,8 @@
     
     <body>
         <!--main navigation-->
-
-        <h2> <img src="images/qna-icon.png" width="80" height="60" ><a onclick="toggle('content');" href="">Forum</a></h2>
+        <div class="container">
+        <h2> <img src="images/qna-icon.png" width="80" height="60" onclick="toggle('content');">Forum </h2>
         <form method=GET action="forum.html" style="float: right">
             <input type=hidden name=ie value=UTF-8>
             <input type=hidden name=oe value=UTF-8>
@@ -96,7 +96,15 @@
                 28 Jun 2018 10:30pm
                 </font></td></tr></table>
                 
-                     
+                <img src="images/ask.png" height="100" width="100">
+                <b>Post a question</b>
+                <div >
+                        <form id="postquestion">
+                                        Question:<input type="text" name="Question"><br>
+                                        Description:<input type="text" name="description"><br>
+                                        <button type="reset">Post my question</button>
+                                    </form>
+                                    </div>
 
 
 
@@ -116,7 +124,7 @@
                 </div> 
             </div> 
 
-           <div  id="content">
+           <div class="form"  id="content" style="display:none">
                <div id="question1">
             <center><a name="question"></a>
                 <table width="98%" border="0" cellspacing="0" cellpadding="0">
@@ -216,6 +224,22 @@
                         
                         </div> 
                         
+                    </div> 
+                                       
+                    <img src="images/ask.png" height="100" width="100">
+                    <b>Post a question</b>
+                    <div id="postquestion" >
+                            <center><a name="question"></a></center>
+                                <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                                            <td><textarea></textarea>
+                                            <button type="submit">Post my question</button></td>
+                                        </tr> 
+                </table>
+                
+                </div>
                     </div>
+
+                    
     </body>
     </html>
