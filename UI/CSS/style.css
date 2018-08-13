@@ -420,6 +420,7 @@ button:hover {
     border: none;
     outline: none;
     cursor: pointer;
+    width: 20%;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;

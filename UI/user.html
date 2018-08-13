@@ -25,13 +25,13 @@
 
         </header>
             
-    </body><h3><img src="images/Profile-512.png" height="100" width="100" >Welcome Rhytah!! Here are your views:</h3>
+    </body><h3><img src="images/Profile-512.png" height="100" width="100" style="float: right;" >Welcome Rhytah!! Here are your views:</h3>
     
     
     <div class="tab">
-      <button class="tablinks" onclick="opentab(event, 'questions')">Asked questions number</button>
-      <button class="tablinks" onclick="opentab(event, 'answers')">Number of answers given</button>
-      <button class="tablinks" onclick="opentab(event, 'topuserQuestions')">top Questions I asked</button>
+      <button class="tablinks" onclick="opentab(event, 'questions')">Asked questions </button>
+      <button class="tablinks" onclick="opentab(event, 'answers')">Answers given</button>
+      <button class="tablinks" onclick="opentab(event, 'topuserQuestions')">Top Questions I asked</button>
       <button class="tablinks" onclick="opentab(event, 'recentQuestions')">Questions I recently asked</button>
     </div>
     
@@ -41,17 +41,64 @@
     </div>
     
     <div id="answers" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p> 
+      <h3>Number of answers given</h3>
+      <p>15</p> 
     </div>
     
     <div id="topuserQuestions" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
+      <h3>Questions I asked with the most answers</h3>
+      <ol>
+          <li><center><a name="question"></a>
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+            <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+            <td align="right">&nbsp;</td></tr></table></td></tr></table>
+            <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+            <b>Anybody know what bootsrap is?</b>
+            <br>
+            
+            <td width="1%" nowrap><font size="-1">Posted:
+            06 Jul 2018 12:16am</td></tr>
+            </font>
+            <td width="1%" nowrap><font size="-1">Answers:  20 answers
+                    </font></table></li>
+           <li><center><a name="question"></a>
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+            <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+            <td align="right">&nbsp;</td></tr></table></td></tr></table>
+            <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+            <b>What was the big bang?</b>
+            <br>
+        
+            <td width="1%" nowrap><font size="-1">Posted:
+            15 May 2018 02:16am</td></tr>
+            </font>
+            <td width="1%" nowrap><font size="-1">Answers:  15 answers
+                    </font></table></li>
+            <li><center><a name="question"></a>
+                    <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                    <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                    <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                    <b>What is the difference between form get and form post?</b>
+                    <br>
+                    <td width="1%" nowrap><font size="-1">Posted:
+                    06 Jan 2018 5:16pm</td></tr>
+                    </font>
+                    <td width="1%" nowrap><font size="-1">Answers:  20 answers
+                            </font></table>
+            </li>
+      </ol>
     </div>
     <div id="recentQuestions" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
+        <h3>My recently asked questions</h3>
+    <ol style="font-style: italic;"> 
+                <li><b>How does slack work?</b></li>
+                <li>What is javascript?</li>
+                <li>Can i create a data structure without a database?</li>
+                <li>How can I implement test during TDD</li>
+                <li>How do I vote answers on StackOverflow?</li>
+                <li>Is it possible to delete a pic entirely off the web?</li>
+        </ol>
     </div>
     
     <script>
