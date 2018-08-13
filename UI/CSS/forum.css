@@ -19,8 +19,8 @@ body
 p
 {
     font: caption;
-    font-size: 24px;
-    font-weight:bold;
+    font-size: 16px;
+    font-style: italic;
 }
 h1
 {
@@ -128,7 +128,11 @@ height: 100px;
     position: center;
     display: inline-block;
 }
-
+/*button within question table*/
+button#content  #addanswer
+{
+    font-size: 14px;
+}
 .container .left
 {
     float: left;
@@ -147,92 +151,6 @@ height: 100px;
     background: none;
 
 }
-/*signin signup formbox*/
-.formBox
-{
-    width: 100%;
-    padding: 20px 20px;
-    box-sizing: border-box;
-    height:400px;
-    background: #ffffff69;
-    position: relative;
-  
-}
-.formBox p
-{
-    margin: auto;
-    padding: 0px;
-    font-weight:bold;
-    font-size: 18px;
-    color: #201420 ;
-}
-.formBox input
-{
-    margin-bottom: 30px;
-    width: 100%;
-    height: 40px;
-    font-size: 18px;
-    border: none;
-    border-bottom: 2px solid #262626;
-}
-.formBox input [type="text"],
-.formBox input [type="password"]
-{
-    border: none;
-    border-bottom: 2px solid #201420;
-    height: 100px;
-    outline: none;
-    
-}
-.formBox input[type="text"]:focus,
-.formBox input[type="password"]:focus
-{
-    
-    border-bottom: 2px solid #262626; 
-}
-.formBox input[type="submit"]
-{
-    border: none;
-    outline: none;
-    height: 40px;
-    color: #ffffff;
-    background: #262626;
-    cursor: pointer;
-}
-.formBox input[type="submit"]:hover
-{
-    background: #aa66aa;
-}
-.formBox a
-{
-    color: #222222;
-    font-size: 16px;
-    font-weight: bold;
-}
-.formBox button
-{
-    padding: 0;
-    background:blueviolet;
-    height:40px;
-    color:#ffffff;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-.formBox button:hover{
-    background: #bb94b1;
-}
-
-/*admin*/
-.sidebar
-{
-   width: 250px;
-   height: 500px;
-   background-color: #1a1b63;
-   float: left; 
-
-}
-
 /*navigation within admin*/
 ul#nav
 {
@@ -263,7 +181,7 @@ ul#nav li a:hover
     width: auto;
     height:500px;
     background-color: whitesmoke;
-    padding: 15px;
+    padding: 06px,10px;
     margin-left: 250px;
     display: none;
 }
@@ -329,64 +247,8 @@ div#box .box-panel
 {
     display:block;
 }
-/*table styling user*/
-.container #ViewRequests
-{
-    height: auto;
-    width: 90%;
-    box-sizing: border-box;
-}
-#ViewRequests 
-{
-    width: 90%;
-    padding-left: 0.8rem;
-}
-#myData
-{
-    padding: 12px 20px 12px 40px;
-    
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    height: 30px;
-    width: 40%;
-    background-color: rgba(252, 252, 252, 0.781);
-    margin-bottom: 12px;
-}
-#Requests
-{
-    padding: 0 02px;
-   /* border: 1px solid #1C6EA4;*/
-    background-color: rgba(238, 238, 238, 0.103);
-    width: fit-content;
-    border: 2px solid #1a015e;
-    border-collapse: collapse;
-    display: inline-table;
-    font-size: 18px;
-    box-sizing: border-box;
-}
-#Requests td th
-{
-    border: 1px solid #AAAAAA;
-    padding: 3px 2px;
-    color: navy;
-    font-weight: bold;
-    text-align: auto;
-    border-bottom-color: #2438045b;
-}
-#Requests tbody td
-{
-    font-size: 18px;
-    color: #1a1b63;
-    border: 1px solid #0b4b7c;
 
-}
-table #Approve
-{
-    font-size: 20px;
-    cursor: pointer;
-    user-select: contain;
-}
+
 fa 
 {
     font:sans-serif;
@@ -396,24 +258,6 @@ fa:hover
     color: rgb(1, 29, 68) ;
     align-self: center;
     height: 30px;
-}
-/*create request*/
-
-#CreateRequest
-{
-    display: inline-block;
-    width: 90%;
-    font-size: 18px;
-    padding: 6px;
-}
-#CreateRequest form, p
-{
-    padding: 2px auto;
-    margin: 0;
-    width: 50%;
-    color: #223750;
-    display: inline-block;
-    font-size: 18px;
 }
 
 .form input
@@ -425,16 +269,4 @@ fa:hover
     font-size: 18px;
     border: none;
     border-bottom: 2px solid #262626;
-}
-/*about page*/
-#about
-{
-    width: 90%;
-    padding: 0px;
-    background-color:rgb(52, 103, 212);
-
-}
-#answer
-{
-    display: none;
 }
