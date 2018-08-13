@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="CSS/forum.css">
         </link>
         <head>
+                <script type="text/javascript">
+                    
+                    function toggle(id) {
+                    var e = document.getElementById(id);
+                    if(e.style.display == 'none')
+                    e.style.display = 'block';
+                    else
+                    e.style.display = 'none';
+                    }
+                
+                </script>
                 <header class = "top-bar js-top-bar  _fixed top-bar">
                         <div class="">
                                 <nav>
@@ -25,12 +36,63 @@
     <body>
         <!--main navigation-->
     
-        <h2> <img src="images/qna-icon.png" width="80" height="60">Forum</h2>
-
-             <div id="questions">
+        <h2> <img src="images/qna-icon.png" width="80" height="60" ><a onclick="toggle('content');" href="">Forum</a></h2>
+        <div>
                  <h1>Recently Asked Questions</h1>
-                 <ol>
-                 <li class=""><p onclick="">What is a toy?</p></li>
+             <div id="recentlyaskedquestions">         
+                
+                 <center><a name="question"></a>
+                     <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                     <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                     <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                     <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                     <b>Anybody know what bootsrap is?</b>
+                     <br>
+                     
+                     Asked by:
+                     <b>Avatar</b>
+                     <br>
+                     <td width="1%" nowrap><font size="-1">Posted:
+                     06 Jul 2018 12:16am
+                     </font></td></tr></table>
+            <center><a name="question"></a>
+                <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <b>What is a robot?</b>
+                <br>
+                
+                Asked by:
+                <b>Hooman</b>
+                <br>
+                <td width="1%" nowrap><font size="-1">Posted:
+                03 Jul 2018 2:20pm
+                </font></td></tr></table>
+                            <center><a name="question"></a>
+                <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <b>Does anyone know the phrase to catch a rat?</b>
+                <br>
+                
+                Asked by:
+                <b>Tinker</b>
+                <br>
+                <td width="1%" nowrap><font size="-1">Posted:
+                28 Jun 2018 10:30pm
+                </font></td></tr></table>
+                
+                     
+
+
+
+
+
+
+ <!---                <ol>
+                 <li class=""><a href="">What is a toy?</a></li>
                  <li class=""><a href="">How do I get an uber?</a></li>
                  <li class=""><a href="">Are bananas yellow?</a></li>
                  <li class=""><a href="">Anybody know what bootstrap is?</a></li>
@@ -38,12 +100,101 @@
                  </ol>
                  <img src="images/ask.png" height="50">
                         <textarea input placeholder="add your question here"></textarea>
-                </div>
-                 <div id="answers"> 
-                     <p> toy is something you play with</p>
-                    <p> toy is something you play with</p>
-                    <p> toy is something you play with</p>
-                    <p> toy is something you play with</p>
-             </div>
+                         -->
+                </div> 
+            </div> 
+
+           <div  id="content">
+               <div id="question1">
+            <center><a name="question"></a>
+                <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <b>Anybody know what bootsrap is?</b>
+                <br>
+                
+                Asked by:
+                <b>Avatar</b>
+                <br>
+                <td width="1%" nowrap><font size="-1">Posted:
+                06 Jul 2018 12:16
+                </font></td></tr></table>
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr><td colspan="2"><br> Some brief description here......................</td></tr>
+                <tr><td><button href="#"
+                    onclick="toggle('answer1');">View answer</button> 
+                    </div></td></tr></table>
+
+                        <div class="form" style="display:none" id="answer1">
+                        <center><a name="answer"></a>
+                            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Answer</b></td>                                        <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                            <p>Computer skills are essential in order to utilize computers and related technology efficiently.<br>
+                                 <a href="https://en.wikiversity.org/wiki/Computer_Skills/Fundamentals">This course</a> will help you learn basic computer skills, including typing and using a mouse. <br>
+                                After you've mastered the basics, this course will help you learn about Internet and email, computers, word processing, multimedia, and spreadsheets. </blockquote>
+                            </p>
+                                <center><a name="answer"></a>
+                            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Answer</b></td>
+                                     <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                                      <p>  W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.</p>
+                            <a name="comments"></a>
+                            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Comments</b></td>
+                                    <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                                    <table width="98%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#eeeeee">There are no comments at this time.</td></tr></table>
+                                </center>
+           </div>
+                            <div id="question2">
+            <center><a name="question2"></a>
+                <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <b>Where can I find a good computer?</b>
+                <br>
+                
+                Asked by:
+                <b>Angelica</b>
+                <br>
+                <td width="1%" nowrap><font size="-1">Posted:
+                07 May 2018 09:45am
+                </font></td></tr></table>
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr><td colspan="2"><br> Some brief description here......................</td></tr>
+                <tr><td><button href="#"
+                    onclick="toggle('answer2');">View answer</button> 
+                    </div></td></tr></table>
+
+                        <div class="form" style="display:none" id="answer2">
+                        <center><a name="answer"></a>
+                            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                                    <tr><td><b>Answer</b></td>
+                                        <td align="right">&nbsp;</td>
+                                    </tr></table></td></tr></table>
+                            <p>Kampala Road.</p>
+                            </p>
+                                <center><a name="answer"></a>
+                            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><b>Answer</b></td></tr>                                       <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                                <p> Shop online for quality brands 
+                                      </p>
+                                      </table>
+                            <a name="comments"></a>
+                            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"></tr></td>
+                                    <b>Comments</b></td>
+                                    <tr><td align="right">&nbsp;</td></tr></table>
+                                    <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr><td bgcolor="#eeeeee">Some more elaboration please.</td></tr>
+                                    </table>
+                                </center>
+                                <button type="submit" name="Add answer">Add an asnwer</button>
+                                
+                            
+                           
+                        
+                        </div>
+                    </div>
     </body>
     </html>
