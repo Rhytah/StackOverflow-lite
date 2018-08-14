@@ -16,6 +16,9 @@
                     else
                     e.style.display = 'none';
                     }
+                    function singupAlert(){
+                        alert("Sign up successful");
+                    }
                 </script>
 
         </head>
@@ -59,18 +62,16 @@
         
 
                 
-                <div class="container"  >
-
-                        
+                <div class="container" >
                     <div class="left">
-                        
+
                         <h2>StackOverflow-Lite</h2>
                         <h1>Learn, Share, Build</h1>
                         <h3></h3>
                         <p>Join the world's largest developer community</p>
 
                         <button onclick="show('SignUp');">Join us</button>
-                        <img src="images/240_F_163775741_76j38qRyfJW7QMBIaQB1X1E801aKwcDu.jpg">
+                        
                     </div>
 
                     <div class="right">
@@ -85,7 +86,8 @@
                             <input type="text" placeholder="Email">
                             <p>Password</p>
                             <input type="Password" placeholder="********">
-                            <input type="submit" name="" value="SignUp">
+                            <input type="submit" name="" value="SignUp" onclick="singupAlert()">
+
                         </form>
 
                         </div>
