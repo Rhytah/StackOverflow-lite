@@ -21,4 +21,7 @@ StackOverflow-lite is a platform where people can ask questions and provide answ
 > 11. Users can view questions with the most answers.
 
 ----------------------------------------------------------------------------------------------------------------------
-> 
+> ## Used Technologies
+> ### HTML
+> ### JAVASCRIPT
+> ### CSS
