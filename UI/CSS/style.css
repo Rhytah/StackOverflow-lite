@@ -98,12 +98,14 @@ header nav li a:hover
 button
 {
     font-family: sans-serif;
+
     font-size: 18px;
     color: goldenrod;
     font-weight: bold;
     height: 40px;
     text-align: center;
     width:100px;
+
     padding: 14px 16px;
     text-decoration: #aa66aa;
     background:#132c3f83;
@@ -192,6 +194,7 @@ form
     font-size: 18px;
     color: #201420 ;
 }
+
 .formBox input
 {
     margin-bottom: 30px;
@@ -321,6 +324,7 @@ div#box
 #answer
 {
     display: none;
+
 }
 /* The Modal (background) */
 .modal {
@@ -450,4 +454,5 @@ button:hover {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+
 }
