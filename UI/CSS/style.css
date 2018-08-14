@@ -19,7 +19,7 @@ body
 p
 {
     font: caption;
-    font-size: 24px;
+    font-size: 18px;
     font-weight:bold;
 }
 h1
@@ -52,9 +52,11 @@ header nav ul
 {
     display: block;
     margin: 0 auto;
-    font-size: 16px;
-
-
+    font-size: 14px;
+}
+header nav ul li input, button
+{
+    height: 40px;
 }
 header nav li
 {
@@ -62,7 +64,7 @@ header nav li
     display: inline-block;  
     list-style-type: none;
     margin: 0;
-    padding: 0 12px;
+    padding: 0 06px;
     overflow: hidden;
     background-color: #132c3f83;
     position: relative;
@@ -78,10 +80,10 @@ a
 header nav li a
 {
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: goldenrod;
     font-weight: bold;
-    display: block;
+    display: inherit;
     text-align: center;
     width:60px;
     padding: 14px 16px;
@@ -96,12 +98,14 @@ header nav li a:hover
 button
 {
     font-family: sans-serif;
-    font-size: 20px;
+
+    font-size: 18px;
     color: goldenrod;
     font-weight: bold;
-    display: block;
+    height: 40px;
     text-align: center;
-    width:60px;
+    width:100px;
+
     padding: 14px 16px;
     text-decoration: #aa66aa;
     background:#132c3f83;
@@ -154,7 +158,7 @@ button
     float: left;
     width: 50%;
     height: 400px;
-    background:center url(Andela.jpg);
+    background:whitesmoke;
     background-size: fit;
     box-sizing: border-box;
 }
@@ -167,13 +171,36 @@ button
     background: none;
 
 }
+form
+{
+ color:#071e30;
+}
+/*signin signup formbox*/
+.formBox
+{
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    height:400px;
+    background:goldenrod;
+    position: relative;
+  
+}
+.formBox p
+{
+    margin: auto;
+    padding: 0px;
+    font-weight:bold;
+    font-size: 18px;
+    color: #201420 ;
+}
 
 .formBox input
 {
     margin-bottom: 30px;
     width: 100%;
-    height: 40px;
-    font-size: 18px;
+    height: 80px;
+    font-size: 20px;
     border: none;
     border-bottom: 2px solid #262626;
 }
@@ -220,9 +247,16 @@ button
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    
 }
 .formBox button:hover{
     background: #bb94b1;
+}
+form input
+{
+    font-size: 16px;
+    padding: 2px;
+    margin: auto;
 }
 
 /*admin*/
@@ -252,6 +286,12 @@ ul#nav li a
    font-size: 0.8em;
    border-bottom: 1px solid #0a0a0a;
 
+}
+ul button
+{
+color:goldenrod;
+width: 100px;
+background: #071e30;
 }
 ul#nav li a:hover
 {
@@ -284,26 +324,27 @@ div#box
 #answer
 {
     display: none;
+
 }
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed;
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
     background-color: #474e5d;
     padding-top: 50px;
 }
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto; 
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
 }
 /* Clear floats */
 .clearfix::after {
@@ -376,4 +417,42 @@ button:hover {
   float: left;
   width: 50%;
 }
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #071e30;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+
 }
