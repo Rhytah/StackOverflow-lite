@@ -19,14 +19,30 @@
                             <ul style="float:right;">
                                 <li class ="active"><a>Home</a></li>
                                 <li><a href="forum.html">Forum</a></li>
-                                <li><a href="user.html">SignIn</a></li>
+                                <li><button onclick="document.getElementById().style.display='block'" style="width:auto;"> SignIn</button></li>
                             </ul>
                         </nav>                
         
 
         </header>
         
-                
+                <div class="modal" id="signin">
+                    <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <form class="modal-content">
+                        <div class="signin">
+                            <h1>SignIn</h1>
+                            <label for="email"><b>Email</b> </label>
+                            <input type="text"placeholder="Enter Email" name="email" required>
+                            <label for="psw"><b>Password</b></label>
+                            <input type="text"placeholder="Enter Password" name="psw" required>
+                           <label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me</label>
+                           <div class="clearfix">
+                               <button><a href="user.html">SignIn</a></button>
+                           </div>
+                        </div>
+                    </form>
+
+                </div>
                 <div class="container" id= "SignUp">
                         
                     <div class="left">
@@ -55,7 +71,18 @@
                     </div>
                 </div>
                 </div>
+        <script>
+        //Get the modal
+        var modal =document.getElementById('signin');
         
+        //when user clicks anywhere outside the modal, close it
+        window.onclick = function(event)
+        {
+            if (event.target == modal){
+                modal.style.display ="none";
+            }
+        }
+        </script>
      
     </body>
     </html>
