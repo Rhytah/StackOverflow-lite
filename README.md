@@ -1,27 +1,43 @@
 # StackOverflow-lite
 StackOverflow-lite is a platform where people can ask questions and provide answers.
 
-----------------------------------------------------------------------------------------------------------------
->## Features
+## Features(UI).
+* user signup.
+* user login.
+* users can post questions.
+* Users can post answers.
+* Users can view the answers to questions.Users can view recently asked questions
+ 
 
-> 1. Users can create an account and log in.
-> 2. Users can post questions.
-> 3. Users can delete the questions they post.
-> 4. Users can post answers.
-> 5. Users can view the answers to questions.
-> 6. Users can accept an answer out of all the answers to his/her question as the preferred answer.
+## Getting Started
+clone the github repo to your computer:
+* $git clone https://github.com/Rhytah/StackOverflow-lite
+* Extract the zip file to another file
+* Open using text editor
+* Run it using web browser 
 
---------------------------------------------------------------------------------------------------------------------
->## Optional Features
+### Prerequisites
 
-> 7.  Users can upvote or downvote an answer.
-> 8.  Users can comment on an answer.
-> 9.  Users can fetch all questions he/she has ever asked on the platform
-> 10. Users can search for questions on the platform
-> 11. Users can view questions with the most answers.
+* Text editor where we write our project files. (VScode)
+* Web browser (Mozilla, Chrome) to preview project files
 
-----------------------------------------------------------------------------------------------------------------------
-> ## Used Technologies
-> ### HTML
-> ### JAVASCRIPT
-> ### CSS
+## Technologies Used
+* HTML.
+* CSS.
+* JAVASCRIPT.
+
+### Usage
+* launch index.html to access Sign Up/ Sign In options
+* Navigation bar on the top right corner links you to other pages within the preject.
+* Forum.html has toggle();
+       -click Forum/image todisplay Questions
+       -click buttons to display further features on page
+* User.hmtl uses hide/show menu tabs to display user views. Click on each respective tab to display information.
+
+## Known Bugs
+The App does not have a database and doesn't save data entered in it.
+
+## GH-Pages.
+my site is published at https://rhytah.github.io/StackOverflow-lite/
+
+
