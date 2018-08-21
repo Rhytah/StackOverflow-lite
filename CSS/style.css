@@ -19,7 +19,7 @@ body
 p
 {
     font: caption;
-    font-size: 18px;
+    font-size: 16px;
     font-weight:bold;
 }
 h1
@@ -34,17 +34,17 @@ header
 {
     background: #071e30;
     width:100%;
-    height: 120px;
+    height: 80px;
 }
 header .header-brand{
     font-family:  sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(182, 129, 15);
     font-weight: bold;
     text-transform: uppercase;
     display: block;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 18px 0;
     text-align: center;
 
 }
@@ -56,7 +56,7 @@ header nav ul
 }
 header nav ul li input, button
 {
-    height: 40px;
+    height: 30px;
 }
 header nav li
 {
@@ -85,9 +85,10 @@ header nav li a
     font-weight: bold;
     display: inherit;
     text-align: center;
-    width:60px;
-    padding: 14px 16px;
+    width:40px;
+    padding: 14px 14px;
     text-decoration: #aa66aa;
+    height: 15px;
 }
 header nav li a:hover
 {
@@ -179,12 +180,13 @@ form
 /*signin signup formbox*/
 .formBox
 {
-    width: fit-content;
+    width: 50%;
     padding: 10px 0px;
     box-sizing: border-box;
     height:fit-content;
     background:goldenrod;
     position: relative;
+    float:right;
   
 }
 .formBox p
@@ -199,20 +201,21 @@ form
 .formBox input
 {
     margin-bottom: 30px;
-    width: 95%;
-    height: 40px;
+    width: 90%;
+    height: fit-content;
     font-size: 14px;
     border: none;
     border-bottom: 2px solid #262626;
+    
 }
 .formBox input [type="text"],
 .formBox input [type="password"]
 {
     border: none;
     border-bottom: 2px solid #201420;
-    height: 100px;
+    height: 40px;
     outline: none;
-    padding: 2px, 4px;
+    padding: 2px, 2px;
     
 }
 .formBox input[type="text"]:focus,
@@ -256,8 +259,8 @@ form
 }
 form input
 {
-    font-size: 16px;
-    padding: 2px;
+    font-size: 18px;
+    padding: 1px;
     margin: 04px;
     width: 50%;
 }
