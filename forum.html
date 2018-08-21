@@ -33,13 +33,13 @@
                 <header class = "top-bar js-top-bar  _fixed top-bar">
                         <div class="">
                                 <nav>
-                                        <logo><img src="images/stackoverflow2.png" alt="" height="100"></logo>
+                                        <logo><img src="images/stackoverflow2.png" alt="" height="75"></logo>
                                         <ul style="float: right;">
                                             <li><a href="index.html">Home</a></li>
-                                            <li class ="active"><a>Forum</a></li>                                 <li><input type="text" placeholder="Email" name="email"></li>
+                                            <li class ="active"><a>Forum</a></li>
+                                            <li><input type="text" placeholder="Email" name="email"></li>
                                             <li><input type="text" placeholder="Password" name="psw"></li>
-                                             <br><li style="float: right"><a type="submit" href="user.html" >SignIn</a>
-                                             </li>
+                                             <li style="float: right"><a type="submit" href="user.html" >SignIn</a></li>
                                            </li>
                                             
                                         </ul>
@@ -52,7 +52,7 @@
     <body>
         <!--main navigation-->
         <div class="container">
-        <h2> <img src="images/qna-icon.png" width="80" height="60" onclick="toggle('content');">Forum </h2>
+        <h2 > <img src="images/qna-icon.png" width="80" height="60" style="float: right;" onclick="toggle('content');">Forum </h2>
         <form method=GET action="forum.html" style="float: right">
             <input type=hidden name=ie value=UTF-8>
             <input type=hidden name=oe value=UTF-8>
@@ -66,85 +66,95 @@
             </td></tr></table>
         </form>
         <div>
-                 <h1>Recently Asked Questions</h1>
+            
+                <img src="images/ask.png" height="60" width="60">
+                <h>Post a question</h2>
+
+                    <center id="postquestion"><a name="question"></a>
+                        <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                        <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                        <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                        <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"> Subject:
+                        <input type="text">
+                        <br>
+                        <p>Description:
+                        <input type="text" >
+                        <br>
+                     </p>
+                        </td></tr>
+                    </table>
+                        <button type="submit" onclick="questionAlert()">Post your question</button>
+                        </center>
+                
+                <h1>Recently Asked Questions</h1>
              <div id="recentlyaskedquestions">         
                 
                  <center><a name="question"></a>
                      <table width="98%" border="0" cellspacing="0" cellpadding="0">
                      <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
                      <td align="right">&nbsp;</td></tr></table></td></tr></table>
-                     <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                     <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%">Subject:
                      <b>Anybody know what bootsrap is?</b>
                      <br>
                      
                      Asked by:
-                     <b>Avatar</b>
+                                          <b>Avatar</b>
                      <br>
-                     <td width="1%" nowrap><font size="-1">Posted:
+                     <td width="1%" nowrap>
+                         Posted:
                      06 Jul 2018 12:16am
-                     </font></td></tr></table>
+                     </td></tr></table>
             <center><a name="question"></a>
                 <table width="98%" border="0" cellspacing="0" cellpadding="0">
                 <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
                 <td align="right">&nbsp;</td></tr></table></td></tr></table>
-                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><p size="-1">Subject:
                 <b>What is a robot?</b>
                 <br>
                 
                 Asked by:
                 <b>Hooman</b>
                 <br>
-                <td width="1%" nowrap><font size="-1">Posted:
+                <td width="1%" nowrap><p size="-1">Posted:
                 03 Jul 2018 2:20pm
-                </font></td></tr></table>
+                </p></td></tr></table>
                             <center><a name="question"></a>
                 <table width="98%" border="0" cellspacing="0" cellpadding="0">
                 <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
                 <td align="right">&nbsp;</td></tr></table></td></tr></table>
-                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><p size="-1">Subject:
                 <b>Does anyone know the phrase to catch a rat?</b>
                 <br>
                 
                 Asked by:
                 <b>Tinker</b>
                 <br>
-                <td width="1%" nowrap><font size="-1">Posted:
+                <td width="1%" nowrap><p size="-1">Posted:
                 28 Jun 2018 10:30pm
-                </font></td></tr></table>
+                </p></td></tr></table>
                 </center>
                 <div>
-                <img src="images/ask.png" height="60" width="60">
-                <h2>Post a question</h2>
-                
-                        <form id="postquestion">
-                                       <p>Question:</p> <input type="text" name="Question">
-                                        <p>Description:</p><input type="text" name="description">
-                                        
-                                        
-                                    </form><button type="reset" onclick="questionAlert()">Post my question</button>
-                                    
-                                </div>
 
 
                 </div> 
             </div> 
 
-           <div class="form"  id="content" style="display:none">
+           <div class="form"  id="content" style="display:block">
                <div id="question1">
             <center><a name="question"></a>
                 <table width="98%" border="0" cellspacing="0" cellpadding="0">
                 <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
                 <td align="right">&nbsp;</td></tr></table></td></tr></table>
-                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><p size="-1">Subject:
                 <b>Anybody know what bootsrap is?</b>
                 <br>
                 
                 Asked by:
                 <b>Avatar</b>
                 <br>
-                <td width="1%" nowrap><font size="-1">Posted:
+                <td width="1%" nowrap><p size="-1">Posted:
                 06 Jul 2018 12:16
-                </font></td></tr></table>
+                </p></td></tr></table>
                 <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr><td colspan="2"><br> Some brief description here......................</td></tr>
                 <tr><td><button href="#"
                     onclick="toggle('answer1');">View answer</button> 
@@ -176,16 +186,16 @@
                 <table width="98%" border="0" cellspacing="0" cellpadding="0">
                 <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
                 <td align="right">&nbsp;</td></tr></table></td></tr></table>
-                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><p size="-1">Subject:
                 <b>Where can I find a good computer?</b>
                 <br>
                 
                 Asked by:
                 <b>Angelica</b>
                 <br>
-                <td width="1%" nowrap><font size="-1">Posted:
+                <td width="1%" nowrap><p size="-1">Posted:
                 07 May 2018 09:45am
-                </font></td></tr></table>
+                </p></td></tr></table>
                 <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr><td colspan="2"><br> Some brief description here......................</td></tr>
                 <tr><td><button href="#"
                     onclick="toggle('answer2');">View answer</button> 
@@ -220,10 +230,10 @@
                                                     <table width="98%" border="0" cellspacing="0" cellpadding="0">
                                                         <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2">
                                                                 <td><textarea></textarea>
-                                                                <button type="submit" onclick="answerAlert()">Submit my answer</button></td>
+                                                                </td>
                                                             </tr> 
                                     </table>
-
+<button type="submit" onclick="answerAlert()">Submit my answer</button>
                                     
                                 </center>
                             </div>                              

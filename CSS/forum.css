@@ -4,7 +4,8 @@ body
     padding: 2px  8px;
     background:whitesmoke;
     background-size: cover;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -webkit-transition:all .5s;
@@ -22,6 +23,7 @@ p
     font: caption;
     font-size: 16px;
     font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1
 {
@@ -35,17 +37,17 @@ header
 {
     background:#071e30;
     width:100%;
-    height: 120px;
+    height: 80px;
 }
 header .header-brand{
     font-family:  sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(182, 129, 15);
     font-weight: bold;
     text-transform: uppercase;
     display: block;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 18px 0;
     text-align: center;
 
 }
@@ -53,12 +55,13 @@ header nav ul
 {
     display: block;
     margin: 0 auto;
+    font-size: 14px;
 
 
 }
 header nav ul li input, button
 {
-    height: 40px;
+    height: 30px;
 }
 header nav li
 {
@@ -86,9 +89,10 @@ header nav li a
     font-weight: bold;
     display: block;
     text-align: center;
-    width:60px;
-    padding: 14px 16px;
+    width:40px;
+    padding: 14px 14px;
     text-decoration: #aa66aa;
+    height: 15px;
 }
 header nav li a:hover
 {
@@ -99,7 +103,7 @@ header nav li a:hover
 textarea
 {
 padding: 2px;
-width: 75%;
+width: 95%;
 height: 100px;
 }
 .active
@@ -265,14 +269,23 @@ fa:hover
     height: 30px;
 }
 
-form input
-{
-    padding: 2px, 0px;
-    font-size: 18px;
-    border: 2px;
-    border-bottom:0px solid #000000;
-    width:75%;
-    display: block;
-    margin: auto;
 
+#postquestion  p,
+{
+    margin: 0 auto;
+    height: fit-content;
+    font-size: 14px;
+    border: 1px solid #262626;
+    padding: 1em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#postquestion input
+{
+    border: none;
+    width: 50%;
+    height: 50px;
+    background: unset;
+    border-bottom: 1px solid chocolate;
 }
